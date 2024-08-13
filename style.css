@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    min-width: 100vh;
+
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://images3.alphacoders.com/823/82317.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0,0,0,0.295);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: wheat;
+    bottom: 5%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+
+}
+
+.text .image{
+    background-image: 
+    background-size: cover;
+    background-position: left center;
+    height: 300px;
+    width: 220px;
+
+}
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.rtext p{
+    font-size: 18px;
+}
+.bottom{
+    display: flex;
+    width:100%;
+    min-height: 40vh;
+}
+.b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://i.pinimg.com/originals/2a/af/6c/2aaf6c3cc10ea18e28a718698f461b73.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b1 h1{
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 20%;
+    color:rgb(20, 20, 125);
+}
+.b1 p{
+    color: beige;
+    text-align: center;
+    padding: 5px;
+}
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+   flex-direction:column ;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://images3.alphacoders.com/568/568877.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b2 .up h1{
+    text-align: left;
+   
+    
+    margin-top: 80px;
+    color: black;
+}
+.b2 .up p{
+    color:black;
+    text-align: center;
+    padding: 15px;
+
+}
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://wallpaperbat.com/img/156437-hawaii-desktop-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b2 .down .overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(247, 243, 243, 0.295);
+}
+.b3{ width: 40%;
+    min-height: inherit;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/12/Caribbean-Desktop-Wallpaper-620x388.jpg);
+    background-position: center;
+    background-size: cover;
+}
+ .b3 .overlay{
+    justify-content:right;
+    position: center;
+    width: 50%;
+    height: 100%;
+    padding: 4vw 3vh;
+ }
+ .b3 .overlay p{
+    text-align: center;
+    font-size: 20px;
+    font-style: inherit;
+ }
+ @media(max-width:700px){
+    .rtext {
+        flex-direction: column;
+        
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+ }
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        width: 140px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 .up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position:left ;
+    }
+}
